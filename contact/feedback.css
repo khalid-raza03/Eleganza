@@ -1,0 +1,230 @@
+/* The given code is a CSS code that defines the styling for a webpage. It includes styles for the
+body, header, logo, details section, contact section, and media queries for responsiveness. */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    background:linear-gradient(-50deg,rgb(140, 4, 90) 0%,rgb(231, 105, 235));
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    /*css for home logo and text*/
+    .logo{
+      padding: 25px 5px 0px 5px;
+     
+    }
+    .logo i{
+      font-size: 33px;
+    }
+    
+    .logo span{
+      font-size:28px;
+      color:#f5f5f8;
+    }
+    
+    .logo a{
+      text-decoration: none;
+    }
+    
+    .logo span:hover{
+      color: #680661;
+    }
+    
+    
+    /*adding css to my details section*/
+    #my-details-container {
+      width: 35%;
+      margin-left: 6%;
+      }
+      
+      #my-details-container h3 {
+      color: rgb(17, 15, 15);
+      font-weight: 550;
+      font-size: 1.5em;
+      
+      }
+      
+      
+      #my-details-container p {
+      color: #e0ecf0;
+      font-size: 1rem;
+      }
+      
+      .my-details-info-container {
+      margin-bottom: 20px;
+      color: #d9dcdd;
+      font-size: 1rem;
+      }
+      
+      .my-details-info-container span {
+      margin-left: 0.4rem;
+      font-size: 1rem;
+      }
+      
+      .my-details-info-container i {
+      color: white;
+      }
+      
+      .my-details-icon {
+      width: 1rem;
+      height: 1rem;
+      vertical-align: bottom;
+      margin-right: 0.5rem;
+      }
+
+      /*Contact form section*/
+    #contact {
+    background-color: #0abcf9;
+    background:linear-gradient(-50deg,rgb(140, 4, 90) 0%,rgb(231, 105, 235));
+    
+    color: white;
+    padding-bottom: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:100%;
+    }
+    
+    h3{
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.5rem;
+    }
+    #contact h1,
+    #contact h1 span {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    }
+    
+    #contact-form {
+    margin-left: 20%;
+    position: relative;
+    
+    }
+    
+    
+    #contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    #contact-form-container {
+    width: 50%;
+    }
+    
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+    outline: none;
+    }
+    
+    #contact-form input,
+    textarea {
+    
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color:white  ;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size:1.15rem;
+    
+    }
+    
+    #contact-form,
+    textarea::placeholder {
+    color: rgb(235, 225, 225);
+    position: relative;
+    top: 25px;
+    left: -8px;
+    line-height: 1.6;
+    font-size:1.15rem;
+     }
+    
+    #contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+    
+    }
+    
+    #contact-form button:hover {
+    background: rgb(45, 78, 228);
+    color:rgb(225, 227, 241);
+    border: 2px solid white;
+    font-size: 1rem;
+    border-radius:10px;
+    }
+    
+    /*to hide the placeholder text of input tag*/
+    #contact-form input::placeholder{
+    color: transparent;
+    }
+    
+    
+    /* to float the placeholder on the top when input is entred */
+    
+                  label{
+                    position: absolute;
+                    left: 0;
+                    transform-origin: 0 0;
+                    transition: transform 0.2s ease-in-out;
+                  }
+    
+                 label[for="name"]{
+                  position: absolute;
+                  display: block;
+                  left: 20px;
+                  top: 18px;
+                  font-size: 1.15rem;
+                  color:white;
+                  padding-bottom: 10px;
+                 }
+    
+                 label[for="email"]{
+                  position: absolute;
+                  display: block;
+                  left: 20px;
+                  top: 88px;
+                  font-size: 1.15rem;
+                  color:white;
+                  padding-bottom: 10px;
+                 }
+    
+      input:focus + label, input:not(:placeholder-shown) + label{
+        transform: translateY(-1em) scale(0.8);
+        font-size: 1rem;
+      }
+    
+      /*adding responsiveness to contact section*/
+      @media only screen and (max-width: 768px) {
+    
+    #contact-form {
+    margin-left: 0%;
+    }
+    
+    #contact-container {
+    flex-wrap: wrap;
+    }
+  }
+  
